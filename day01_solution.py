@@ -11,25 +11,14 @@ they'd like to know how many Calories are being carried by the Elf carrying the 
 Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?"""
 
 
-def compare(the_biggest, new_number): 
-    """Returns True if the_biggest is bigger or the same than new_number. 
-    False otherwise. """
-    if the_biggest <= new_number: 
-        return True
-    else: 
-        print('staré je větší! :( ')
-        return False
-
-
 
 # loading the file with data:
 elf = 1
 elfs = {}
-the_biggest = 0
+the_biggest_calories = 0
 the_strongest_elf = 1
-second_strongest = 1
-third_strongest = 1
 sum = 0
+helper = 0
 
 # data preparation & giving data to sql:
 with open('day01_input.txt', encoding='utf-8') as file:
@@ -49,21 +38,26 @@ with open('day01_input.txt', encoding='utf-8') as file:
             continue
         else: 
             new_number = elfs[elf]
-            if compare(the_biggest, new_number): 
-                the_biggest = new_number
-                the_strongest_elf = elf
-                #print(f'New the biggest: {the_biggest}, {the_strongest_elf}')
-    print(f'elfs: {elfs}, the biggest callories: {the_biggest}, the strongest elf: {the_strongest_elf}')
-         
-            
-        
-    
+          
+    print(f'elfs: {elfs}\n\n')
+    sorted_calories = sorted(elfs.values(), reverse=True)
+    sorted_elfs = {}
 
-    """ 
-    if len(stuff) != 1:
-        continue
-    num = float(stuff[0])
-    if :
-        print()
+    for i in sorted_calories: 
+        for k in elfs.keys(): 
+            if elfs[k] == i: 
+                sorted_elfs[k] = elfs[k]
+    print(sorted_elfs)
+
+    for elf, calories in sorted_elfs.items(): 
+        if helper < 3: 
+            sum += calories
+        else: 
+            break
+        helper += 1
+        
+    print('\nSum of three the best elfs: ', sum)
+
+
     
-""" 
+        
