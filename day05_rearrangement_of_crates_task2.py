@@ -8,6 +8,21 @@ according to instructions below (p.e.: move 3 crates from stack
 6 to stack 2. )
 
 ONE DIFFERENCE FROM task1: Creates are moved all at a time. 
+
+input starts:
+                    [Q]     [P] [P]
+                [G] [V] [S] [Z] [F]
+            [W] [V] [F] [Z] [W] [Q]
+        [V] [T] [N] [J] [W] [B] [W]
+    [Z] [L] [V] [B] [C] [R] [N] [M]
+[C] [W] [R] [H] [H] [P] [T] [M] [B]
+[Q] [Q] [M] [Z] [Z] [N] [G] [G] [J]
+[B] [R] [B] [C] [D] [H] [D] [C] [N]
+ 1   2   3   4   5   6   7   8   9 
+
+move 3 from 6 to 2
+move 5 from 6 to 7
+move 6 from 2 to 5
 """
 
 import re

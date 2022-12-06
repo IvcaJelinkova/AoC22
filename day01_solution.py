@@ -8,9 +8,23 @@ The second Elf is carrying food with 11293, 8478, 10874, 10582, 10756, 6649 Calo
 In case the Elves get hungry and need extra snacks, they need to know which Elf to ask: 
 they'd like to know how many Calories are being carried by the Elf carrying the most Calories.
 
-Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?"""
+Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 
+Input starts: 
+4035
+10596
+17891
+5278
 
+11293
+8478
+10874
+10582
+10756
+6649
+
+9707
+""" 
 
 # loading the file with data:
 elf = 1

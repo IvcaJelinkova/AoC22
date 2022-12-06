@@ -4,6 +4,10 @@ In how many lines is one range occupied in the other?
 Every section has a unique ID number, and each Elf is assigned 
 a range of section IDs.
 
+Input starts: 
+8-82,3-96
+13-95,99-99
+
 """
 import re
 total_contain = 0

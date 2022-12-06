@@ -23,6 +23,11 @@ of items in each of its two compartments, so the first half of
 the characters represent items in the first compartment, while 
 the second half of the characters represent items in the second 
 compartment.
+
+Input starts: 
+lflZfgnSnlmmlgGfjGthQPtLNsQhvbHLLpSS
+zrCVDVFMJTCTcCJMwCThWbtbpbWpPbtbHPLQssLsHP
+rBFcrwFzFwwVDcDrzTzJfnRGjllBdGZnnZfhqmdn
  """ 
 total_value = 0 
 
